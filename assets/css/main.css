@@ -27,6 +27,7 @@ header {
     width: 100%;
     margin: 0;
     background-color: #212836;
+    padding-top: 5%;
 }
 
 textarea:focus, input:focus{
@@ -275,4 +276,78 @@ p.main_subtitle {
     width: 320px !important;
     padding-left: 20px !important;
     color: white !important;
+}
+
+.gong_banner {
+    position:fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+.gong_banner_main_content {
+    padding: 1%;
+}
+
+.gong_banner_logo {
+    height: 35px;
+    width: 35px;
+}
+
+.gong_banner_text {
+    display: inline;
+    size: 2em;
+    font-family: 'Roboto', Tahoma;
+    padding: 4% 1% 4% 1%;
+}
+
+.gong_banner_button {
+    background-image: url("../img/gong_button_background.png");
+    background-size: cover;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.85em;
+    border-radius: 0.5em;
+}
+
+#close_gong_banner {
+    position:relative;
+    display: inline;
+    vertical-align: center;
+    float:right;
+    font-size: 1.5em;
+    height: 0; 
+    overflow: visible;
+}
+
+#close_gong_banner:hover {
+    cursor: pointer; 
+    cursor: hand;
+}
+
+.group:after { 
+    content: ""; 
+    display: block; 
+    clear: both; 
+}
+
+@media all and (max-width: 600px) {
+    .gong_banner_logo {
+        display: block;
+        margin: auto;
+    }
+
+    .gong_banner_text {
+        text-align: center;
+        display: block;
+    }
+
+    .gong_banner_main_content {
+        padding: 2.5%;
+    }
 }
