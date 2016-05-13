@@ -18,7 +18,20 @@
 </head>
 
 <body>
+    <div id= "entire_gong_banner" class="gong_banner container_fluid fixed-top group">
+        <div class="gong_banner_main_content">
+            <span id="close_gong_banner" onclick="removeGongBanner()">&times</span>
+
+            <img class="gong_banner_logo" src="https://s3.amazonaws.com/card-share-email-templates/imgs/logo.png">
+            <div class="gong_banner_text">Stuck on a deal?  Sign up for Gong to get killer insights into your pipeline from your phone!</div>
+            <a href="http://www.getgong.io" target="_blank">
+                <button class="gong_banner_button btn-primary">GET EARLY ACCESS</button>
+            </a>
+            
+        </div>
+    </div>
     <div class="background__container">
+    
         <div class="container">
 
 
@@ -41,24 +54,24 @@
                                 </linearGradient>
                             </defs>
                             <text fill="url(#grad1)" font-size="27pt" font-family="Roboto" font-weight="700" x="45" y="26">
-                                TOMORROW</text>
+                                MONDAY</text>
                         </svg>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <div class="upcoming-users__wrapper">
                         <div class="col-md-4 upcoming-user__wrapper no-gutter">
-                        <a href="https://www.linkedin.com/in/kazanjy" target="_blank">
-                            <img src="assets/img/sohotsohotsohotsohotsohot.jpg" class="upcoming-users__img img-circle" />
+                        <a href="https://www.linkedin.com/in/ryanjoconnor" target="_blank">
+                            <img src="assets/img/ryanjoconnor.jpg" class="upcoming-users__img img-circle" />
 
-                            <p class="upcoming-users__text"><span class="name">Peter Kazanjy</span>
-                                <span class="role"><br/>Founder, TalentBin</span></p>
+                            <p class="upcoming-users__text"><span class="name">Ryan O'Connor</span>
+                                <span class="role"><br/>Director of Sales, DocSend </span></p>
                                 </a>
                         </div>
 
                     </div>
                     <div class="upcoming-users__text" style="padding-bottom:30px; max-width:500px; color:white;">
-                        Peter is a startup, sales ops, sales hiring, and management guru. He founded TalentBin, category-defining talent search engine and recruiting CRM, which exited to Monster in 2014. His high-rigor, invite-only Modern Sales Salon boasts 300+ extremely active members who engage daily in fruitful discussion on sales operations and management. Peter authored Founding Sales, an amazing resource for any early-stage founders or first-time sales staff who need to know all the mistakes to avoid. He shares the knowledge he's gained throughout his career with the various startups he invests in and advises. 
+                    Ryan O'Connor is a musician-turned-startup business leader. He began his career as an early employee at Ticketfly (#18) followed by WillCall (#8), then sold one to the other. He currently serves First Round Capital as an advisor to their early stage founders, and leads sales at DocSend-- document management and engagement analytics platform.
                     </div>
                 </div>
             </div>
@@ -124,6 +137,12 @@
  ga('create', 'UA-76495338-1', 'auto');
  ga('send', 'pageview');
 
+</script>
+
+<script type="text/javascript">
+    function removeGongBanner() {
+        document.getElementById("entire_gong_banner").style.display = "none";
+    }
 </script>
 
 </body>
