@@ -18,7 +18,20 @@
 </head>
 
 <body>
+    <div id= "entire_gong_banner" class="gong_banner container_fluid fixed-top group">
+        <div class="gong_banner_main_content">
+            <span id="close_gong_banner" onclick="removeGongBanner()">&times</span>
+
+            <img class="gong_banner_logo" src="https://s3.amazonaws.com/card-share-email-templates/imgs/logo.png">
+            <div class="gong_banner_text">Stuck on a deal?  Sign up for Gong to get killer insights into your pipeline from your phone!</div>
+            <a href="http://www.getgong.io" target="_blank">
+                <button class="gong_banner_button btn-primary">GET EARLY ACCESS</button>
+            </a>
+            
+        </div>
+    </div>
     <div class="background__container">
+    
         <div class="container">
 
 
@@ -124,6 +137,12 @@
  ga('create', 'UA-76495338-1', 'auto');
  ga('send', 'pageview');
 
+</script>
+
+<script type="text/javascript">
+    function removeGongBanner() {
+        document.getElementById("entire_gong_banner").style.display = "none";
+    }
 </script>
 
 </body>
